@@ -1,11 +1,11 @@
+
 noseX=0;
 noseY=0;
 
 function preload()
 {
-clown_nose = loadImage('https://i.postimg.cc/KcQ1pmJ1/clownnose.png');
+moustache = loadImage('https://i.postimg.cc/3x3QzSGq/m.png');
 }
-
 
 function setup()
 {
@@ -27,23 +27,23 @@ function modelLoaded()
 function draw()
 {
 image(video , 0 , 0 , 400 , 400);
-image(clown_nose , noseX - 12 , noseY - 12 , 40 , 40);
+image(moustache , noseX - 27 , noseY , 60 , 40);
 
 }
 
 function pic_click()
 {
-    save('Joker.png');
+    save('St.Fairy Filter Image.png');
 }
-
 
 function gotPoses(results)
 {
     if(results.length > 0)
     {
+        console.log(results);
         noseX = results[0].pose.nose.x;
         noseY = results[0].pose.nose.y;
         console.log("nose x = " + noseX);
         console.log("nose y = " + noseY);
-     }
+    }
 }

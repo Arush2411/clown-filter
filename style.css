@@ -2,13 +2,18 @@ h4{
     font-size: 25px !important; 
 }
 
+.btn-success:hover
+{
+    background-color: red;
+}
+
 .btn-warning:hover
 {
-    background-color: royalblue;
+    background-color: lightcoral;
 }
 
 body{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 canvas
@@ -20,6 +25,6 @@ canvas
 }
 
 @keyframes example {
-    from{box-shadow: 1px 1px 38px red;}
-    to{box-shadow: 1px 1px 38px yellow;}
+    from{box-shadow: 1px 1px 38px white;}
+    to{box-shadow: 1px 1px 38px palevioletred;}
 }
